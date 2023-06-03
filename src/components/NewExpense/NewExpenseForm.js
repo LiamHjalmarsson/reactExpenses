@@ -23,7 +23,7 @@ const NewExpenseForm = (props) => {
         setUserInput((prevState) => {
             return {
                 ...prevState,
-                enteredAmount: event.target.value
+                enteredAmount: Number(event.target.value)
             }
         });
     }
